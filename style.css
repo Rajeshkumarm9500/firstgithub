@@ -30,6 +30,7 @@
 .rnav{
     display: flex;
     list-style: none;
+    
   
 }
 .navin{
@@ -42,9 +43,20 @@
   margin-bottom: 5px;
 
 }
+.hovert{
+    text-decoration: none;
+    color: black;
+}
+
 .logo:hover,.navin:hover{
     background-color:silver;
 }
+@media screen and (max-width: 500px) {
+  .rnav{
+    display: none;
+  }
+}
+
 .firstland-img{
     margin-top:5px;
     width: 100%;
@@ -91,11 +103,22 @@
     width: 100%;
     
 }
+@media screen and (max-width: 500px) {
+    .secimg{
+      display: none;
+    }
+    .sec-text{
+        width: 100%;
+       
+        text-align: center;
+        
+    }
+  }
 .sec-text{
     width: 100%;
    
     text-align: center;
-    margin-right: 60px;
+    /* margin-right: 60px; */
 }
 
 .sec-h1{
@@ -122,14 +145,14 @@
     font-family: "Times New Roman", Georgia, Serif;
     margin: 18px 0px;
     line-height: 1.5;
-    text-align: justify;
+    
 }
 .sec-p2 {
     font-size: 18px!important;
     font-family: "Times New Roman", Georgia, Serif;
     margin: 18px 0px;
     line-height: 1.5;
-    text-align: justify;
+   
        color: #757575!important;;
 }
 
@@ -153,23 +176,25 @@ hr{    border: 0;
         .thirdland{
             display: flex;
             justify-content: space-evenly;
-            width: 100%;
+            text-align: left;
             flex-wrap: wrap;
             padding-top: 50px;
             padding-bottom: 50px;
-            column-gap: 40px;
+           row-gap: 40px;
           
          } 
          .thirdimg{
             width: 100%;
            
-            text-align: center;
+            /* text-align: center; */
           
          }
          .img2{
             width: 100%;
          }
+         
     }
+   
 
     .third-textcontent{
     
@@ -177,6 +202,20 @@ hr{    border: 0;
          text-align: center;
          
      }
+     @media screen and (max-width: 500px) {
+        .third-textcontent{
+        
+            width: 100%;
+           text-align: left;
+           padding: 10px;
+           
+         }
+         .third-h1{
+            text-align: center;
+         }
+        }
+
+
      .thirdimg{
         width: 100%;
        text-align: center;
